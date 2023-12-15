@@ -3,5 +3,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+/*
+ * macros
+ */
+#define MAX_COMMAND_SIZE 1024
+/*
+ * functions prototypes
+ */
+void _read_command(char *command);
 
 #endif
