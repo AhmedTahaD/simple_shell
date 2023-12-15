@@ -10,6 +10,6 @@
 /*
  * functions prototypes
  */
-void _read_command(char *command);
+void read_command(char *command);
 
 #endif
