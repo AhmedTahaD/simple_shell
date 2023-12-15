@@ -29,6 +29,7 @@ int main(void)
 			}
 			args[count] = NULL;
 			execve(args[0], args, environ);
+		}
 	}
 	return (0);
 }
