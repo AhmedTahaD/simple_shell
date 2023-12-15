@@ -1,6 +1,6 @@
 #include "my_pretty_shell.h"
 /*
- * _read_command function to read the input from user
+ * _read_command - function to read the input from user
  * @command : command to read
  */
 
