@@ -4,11 +4,12 @@
  *
  * Return: return 0 if success
  */
-int main()
+int main(void)
 {
 	while (1)
 	{
 		char command[MAX_COMMAND_SIZE];
+
 		printf("TahaShell $");
 		read_command(command);
 		fflush(stdout);
