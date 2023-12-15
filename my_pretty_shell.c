@@ -2,8 +2,9 @@
 /**
  * main - shell function that execute my shell
  *
+ * Return 0 if success
  */
-void main(void)
+int main(void)
 {
 	while (1)
 	{
@@ -12,4 +13,5 @@ void main(void)
 		printf("TahaShell $");
 		read_command(command);
 	}
+	return (0);
 }
