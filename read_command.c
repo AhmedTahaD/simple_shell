@@ -1,5 +1,5 @@
 #include "my_pretty_shell.h"
-/*
+/**
  * read_command - function to read the input from user
  * @command : command to read
  */
