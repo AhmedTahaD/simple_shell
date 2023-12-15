@@ -1,6 +1,6 @@
 #include "my_pretty_shell.h"
-/*
- *main- main shell function that execute my shell
+/**
+ * main - shell function that execute my shell
  *
  */
 void main(void)
