@@ -7,7 +7,7 @@
 int main(void)
 {
 	char *delim;
-	char *args;
+	char *args[MAX_COMMAND_SIZE];
 	int count;
 
 	while (1)
