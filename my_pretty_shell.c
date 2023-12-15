@@ -2,7 +2,7 @@
 /*
  * main main shell function
  */
-void main ()
+void main(void)
 {
 	while (1)
 	{
