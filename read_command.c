@@ -1,4 +1,5 @@
 #include "my_pretty_shell.h"
+#include <string.h>
 /**
  * read_command - function to read the input from user
  * @command : command to read
@@ -8,8 +9,8 @@ void read_command(char *command)
 {
 	size_t length = strlen(command);
 
-	fgets(command, MAX_INPUT_SIZE, stdin);
-	if (fgets(input, MAX_INPUT_SIZE, stdin) == NULL)
+	fgets(command, MAX_COMMAND_SIZE, stdin);
+	if (fgets(input, MAX_COMMAND_SIZE, stdin) == NULL)
 	{
 		printf("\n");
 		break;
