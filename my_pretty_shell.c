@@ -9,6 +9,6 @@ void main ()
 		char command[MAX_COMMAND_SIZE];
 
 		printf("TahaShell $");
-		_read_command(command);
+		read_command(command);
 	}
 }
