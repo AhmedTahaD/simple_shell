@@ -4,12 +4,12 @@
  *
  * Return: return 0 if success
  */
-int main(void)
+int main()
 {
 	char *delim;
 	char *args[MAX_COMMAND_SIZE];
 	int count;
-	char **environ;
+	extern char **environ;
 
 	while (1)
 	{
