@@ -2,7 +2,7 @@
 /**
  * main - shell function that execute my shell
  *
- * Return 0 if success
+ * Return: return 0 if success
  */
 int main(void)
 {
