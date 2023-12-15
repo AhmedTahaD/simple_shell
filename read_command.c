@@ -1,10 +1,10 @@
 #include "my_pretty_shell.h"
 /*
- * _read_command - function to read the input from user
+ * read_command - function to read the input from user
  * @command : command to read
  */
 
-void _read_command(char *command)
+void read_command(char *command)
 {
 	size_t length = strlen(command);
 
