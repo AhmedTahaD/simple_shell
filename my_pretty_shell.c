@@ -9,6 +9,7 @@ int main(void)
 	char *delim;
 	char *args[MAX_COMMAND_SIZE];
 	int count;
+	char **environ;
 
 	while (1)
 	{
