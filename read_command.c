@@ -10,10 +10,10 @@ void read_command(char *command)
 	size_t length = strlen(command);
 
 	fgets(command, MAX_COMMAND_SIZE, stdin);
-	if (fgets(input, MAX_COMMAND_SIZE, stdin) == NULL)
+	if (fgets(command, MAX_COMMAND_SIZE, stdin) == NULL)
 	{
 		printf("\n");
-		break;
+		exit;
 	}
 	if (length > 0 && command[length - 1] == '\n')
 	{
