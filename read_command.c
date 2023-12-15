@@ -13,7 +13,7 @@ void read_command(char *command)
 	if (fgets(command, MAX_COMMAND_SIZE, stdin) == NULL)
 	{
 		printf("\n");
-		exit();
+		exit(22);
 	}
 	if (length > 0 && command[length - 1] == '\n')
 	{
