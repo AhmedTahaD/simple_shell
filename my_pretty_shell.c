@@ -6,12 +6,27 @@
  */
 int main(void)
 {
+	char *delim;
+	char *args;
+	int count;
 	while (1)
 	{
 		char command[MAX_COMMAND_SIZE];
+		pid_t shell_pid = fork();
 
 		printf("TahaShell $");
 		read_command(command);
+		if (pid == 0)
+		{
+			delim = strtok(command, " ");
+			while (delim != NULL)
+			{
+				args[count] = delim;
+				count++;
+				delim = strtok(command, " ");
+			}
+			args[count] = NULL;
+			execve(args[0], args, environ);
 	}
 	return (0);
 }
