@@ -6,11 +6,6 @@
  */
 int main()
 {
-	char *delim;
-	char *args[MAX_COMMAND_SIZE];
-	int count;
-	extern char **environ;
-
 	while (1)
 	{
 		char command[MAX_COMMAND_SIZE];
@@ -19,18 +14,6 @@ int main()
 		printf("TahaShell $");
 		read_command(command);
 		fflush(stdout);
-		if (shell_pid == 0)
-		{
-			delim = strtok(command, " ");
-			while (delim != NULL)
-			{
-				args[count] = delim;
-				count++;
-				delim = strtok(command, " ");
-			}
-			args[count] = NULL;
-			execve(args[0], args, environ);
-		}
 	}
 	return (0);
 }
