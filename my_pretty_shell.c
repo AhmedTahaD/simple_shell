@@ -18,6 +18,7 @@ int main()
 
 		printf("TahaShell $");
 		read_command(command);
+		fflush(stdout);
 		if (shell_pid == 0)
 		{
 			delim = strtok(command, " ");
